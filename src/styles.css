@@ -1,0 +1,161 @@
+/* CSS */
+
+body {
+    text-align: center;
+}
+
+.app-container {
+    width: 100%;
+    margin: auto;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+/* Homepage login or logout btn */
+#homepage-log {
+    margin-left: 72vw;
+}
+
+/* ProductList.css */
+.product-list-container {
+    width: 70%;
+    margin: auto;
+}
+
+.product-list-header {
+    text-align: center;
+}
+
+.product-list-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-list-input {
+    width: 30%;
+}
+
+.product-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-list-item button {
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Cart component styling */
+.cart-container {
+    width: 70%;
+    margin: auto;
+}
+
+.cart-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+
+    .product-list-container,
+    .cart-container {
+        width: 90%;
+    }
+
+    #homepage-log {
+        margin-left: 0;
+    }
+}
+
+.notification {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    /* Green background color */
+    color: #fff;
+    /* White text color */
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 999;
+    animation: slideIn 0.5s ease-in-out, slideOut 0.5s ease-in-out 2.5s;
+}
+
+/* Keyframe animations for sliding in and out */
+@keyframes slideIn {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -100px;
+    }
+}
